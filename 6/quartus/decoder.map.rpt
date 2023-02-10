@@ -1,0 +1,199 @@
+Analysis & Synthesis report for decoder
+Mon Oct 29 00:19:48 2018
+Version 5.0 Build 148 04/26/2005 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Analysis & Synthesis Equations
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2005 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic       
+functions, and any output files any of the foregoing           
+(including device programming or simulation files), and any    
+associated documentation or information are expressly subject  
+to the terms and conditions of the Altera Program License      
+Subscription Agreement, Altera MegaCore Function License       
+Agreement, or other applicable license agreement, including,   
+without limitation, that your use is for the sole purpose of   
+programming logic devices manufactured by Altera and sold by   
+Altera or its authorized distributors.  Please refer to the    
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Oct 29 00:19:48 2018    ;
+; Quartus II Version          ; 5.0 Build 148 04/26/2005 SJ Full Version ;
+; Revision Name               ; decoder                                  ;
+; Top-level Entity Name       ; decoder                                  ;
+; Family                      ; Stratix                                  ;
+; Total logic elements        ; 8                                        ;
+; Total pins                  ; 11                                       ;
+; Total virtual pins          ; 0                                        ;
+; Total memory bits           ; 0                                        ;
+; DSP block 9-bit elements    ; 0                                        ;
+; Total PLLs                  ; 0                                        ;
+; Total DLLs                  ; 0                                        ;
++-----------------------------+------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                     ;
++--------------------------------------------------------------------+--------------+---------------+
+; Option                                                             ; Setting      ; Default Value ;
++--------------------------------------------------------------------+--------------+---------------+
+; Top-level entity name                                              ; decoder      ; decoder       ;
+; Family name                                                        ; Stratix      ; Stratix       ;
+; Use smart compilation                                              ; Off          ; Off           ;
+; Restructure Multiplexers                                           ; Auto         ; Auto          ;
+; Create Debugging Nodes for IP Cores                                ; off          ; off           ;
+; Preserve fewer node names                                          ; On           ; On            ;
+; Disable OpenCore Plus hardware evaluation                          ; Off          ; Off           ;
+; Verilog Version                                                    ; Verilog_2001 ; Verilog_2001  ;
+; VHDL Version                                                       ; VHDL93       ; VHDL93        ;
+; State Machine Processing                                           ; Auto         ; Auto          ;
+; Extract Verilog State Machines                                     ; On           ; On            ;
+; Extract VHDL State Machines                                        ; On           ; On            ;
+; Add Pass-Through Logic to Inferred RAMs                            ; On           ; On            ;
+; DSP Block Balancing                                                ; Auto         ; Auto          ;
+; Maximum DSP Block Usage                                            ; -1           ; -1            ;
+; NOT Gate Push-Back                                                 ; On           ; On            ;
+; Power-Up Don't Care                                                ; On           ; On            ;
+; Remove Redundant Logic Cells                                       ; Off          ; Off           ;
+; Remove Duplicate Registers                                         ; On           ; On            ;
+; Ignore CARRY Buffers                                               ; Off          ; Off           ;
+; Ignore CASCADE Buffers                                             ; Off          ; Off           ;
+; Ignore GLOBAL Buffers                                              ; Off          ; Off           ;
+; Ignore ROW GLOBAL Buffers                                          ; Off          ; Off           ;
+; Ignore LCELL Buffers                                               ; Off          ; Off           ;
+; Ignore SOFT Buffers                                                ; On           ; On            ;
+; Limit AHDL Integers to 32 Bits                                     ; Off          ; Off           ;
+; Optimization Technique -- Stratix/Stratix GX                       ; Balanced     ; Balanced      ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II ; 70           ; 70            ;
+; Auto Carry Chains                                                  ; On           ; On            ;
+; Auto Open-Drain Pins                                               ; On           ; On            ;
+; Remove Duplicate Logic                                             ; On           ; On            ;
+; Perform WYSIWYG Primitive Resynthesis                              ; Off          ; Off           ;
+; Perform gate-level register retiming                               ; Off          ; Off           ;
+; Allow register retiming to trade off Tsu/Tco with Fmax             ; On           ; On            ;
+; Auto ROM Replacement                                               ; On           ; On            ;
+; Auto RAM Replacement                                               ; On           ; On            ;
+; Auto DSP Block Replacement                                         ; On           ; On            ;
+; Auto Shift Register Replacement                                    ; On           ; On            ;
+; Auto Clock Enable Replacement                                      ; On           ; On            ;
+; Allows Synchronous Control Signal Usage in Normal Mode Logic Cells ; On           ; On            ;
+; Auto RAM Block Balancing                                           ; On           ; On            ;
+; Auto Resource Sharing                                              ; Off          ; Off           ;
+; Allow Any RAM Size For Recognition                                 ; Off          ; Off           ;
+; Allow Any ROM Size For Recognition                                 ; Off          ; Off           ;
+; Allow Any Shift Register Size For Recognition                      ; Off          ; Off           ;
+; Maximum Number of M512 Memory Blocks                               ; -1           ; -1            ;
+; Maximum Number of M4K Memory Blocks                                ; -1           ; -1            ;
+; Maximum Number of M-RAM Memory Blocks                              ; -1           ; -1            ;
+; Ignore translate_off and translate_on Synthesis Directives         ; Off          ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report                 ; On           ; On            ;
++--------------------------------------------------------------------+--------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                              ;
++----------------------------------+-----------------+-----------------+----------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                 ;
++----------------------------------+-----------------+-----------------+----------------------------------------------+
+; decoder.vhd                      ; yes             ; User VHDL File  ; C:/Projects/6_work_final/quartus/decoder.vhd ;
++----------------------------------+-----------------+-----------------+----------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++---------------------------------+-----------+
+; Resource                        ; Usage     ;
++---------------------------------+-----------+
+; Total logic elements            ; 8         ;
+; Total combinational functions   ; 8         ;
+;     -- Total 4-input functions  ; 0         ;
+;     -- Total 3-input functions  ; 8         ;
+;     -- Total 2-input functions  ; 0         ;
+;     -- Total 1-input functions  ; 0         ;
+;     -- Total 0-input functions  ; 0         ;
+; Combinational cells for routing ; 0         ;
+; Total registers                 ; 0         ;
+; I/O pins                        ; 11        ;
+; Maximum fan-out node            ; a[0]      ;
+; Maximum fan-out                 ; 8         ;
+; Total fan-out                   ; 32        ;
+; Average fan-out                 ; 1.68      ;
++---------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
++----------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Full Hierarchy Name ;
++----------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
+; |decoder                   ; 8 (8)       ; 0            ; 0           ; 0            ; 0       ; 0         ; 0         ; 11   ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; |decoder            ;
++----------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------+
+; Analysis & Synthesis Equations ;
++--------------------------------+
+The equations can be found in C:/Projects/6_work_final/quartus/decoder.map.eqn.
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 5.0 Build 148 04/26/2005 SJ Full Version
+    Info: Processing started: Mon Oct 29 00:19:47 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decoder -c decoder
+Info: Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info: Found design unit 1: decoder-behav
+    Info: Found entity 1: decoder
+Info: Elaborating entity "decoder" for the top level hierarchy
+Info: VHDL Case Statement information at decoder.vhd(20): OTHERS choice is never selected
+Info: Implemented 19 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 8 output pins
+    Info: Implemented 8 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Processing ended: Mon Oct 29 00:19:48 2018
+    Info: Elapsed time: 00:00:01
+
+

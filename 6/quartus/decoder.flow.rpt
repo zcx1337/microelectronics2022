@@ -1,0 +1,90 @@
+Flow report for decoder
+Mon Oct 29 00:19:53 2018
+Version 5.0 Build 148 04/26/2005 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Elapsed Time
+  5. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2005 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic       
+functions, and any output files any of the foregoing           
+(including device programming or simulation files), and any    
+associated documentation or information are expressly subject  
+to the terms and conditions of the Altera Program License      
+Subscription Agreement, Altera MegaCore Function License       
+Agreement, or other applicable license agreement, including,   
+without limitation, that your use is for the sole purpose of   
+programming logic devices manufactured by Altera and sold by   
+Altera or its authorized distributors.  Please refer to the    
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------+
+; Flow Summary                                                        ;
++--------------------------+------------------------------------------+
+; Flow Status              ; Successful - Mon Oct 29 00:19:53 2018    ;
+; Quartus II Version       ; 5.0 Build 148 04/26/2005 SJ Full Version ;
+; Revision Name            ; decoder                                  ;
+; Top-level Entity Name    ; decoder                                  ;
+; Family                   ; Stratix                                  ;
+; Met timing requirements  ; Yes                                      ;
+; Total logic elements     ; 8 / 10,570 ( < 1 % )                     ;
+; Total pins               ; 11 / 336 ( 3 % )                         ;
+; Total virtual pins       ; 0                                        ;
+; Total memory bits        ; 0 / 920,448 ( 0 % )                      ;
+; DSP block 9-bit elements ; 0 / 48 ( 0 % )                           ;
+; Total PLLs               ; 0 / 6 ( 0 % )                            ;
+; Total DLLs               ; 0 / 2 ( 0 % )                            ;
+; Device                   ; EP1S10F484C5                             ;
+; Timing Models            ; Final                                    ;
++--------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/29/2018 00:19:47 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; decoder             ;
++-------------------+---------------------+
+
+
++-------------------------------------+
+; Flow Elapsed Time                   ;
++----------------------+--------------+
+; Module Name          ; Elapsed Time ;
++----------------------+--------------+
+; Analysis & Synthesis ; 00:00:01     ;
+; Fitter               ; 00:00:02     ;
+; Assembler            ; 00:00:01     ;
+; Timing Analyzer      ; 00:00:00     ;
+; Total                ; 00:00:04     ;
++----------------------+--------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off decoder -c decoder
+quartus_fit --read_settings_files=off --write_settings_files=off decoder -c decoder
+quartus_asm --read_settings_files=off --write_settings_files=off decoder -c decoder
+quartus_tan --read_settings_files=off --write_settings_files=off decoder -c decoder --timing_analysis_only
+
+
+

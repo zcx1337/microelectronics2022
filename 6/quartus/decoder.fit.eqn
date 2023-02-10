@@ -1,0 +1,128 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--A1L5 is Mux~102 at LC_X36_Y30_N4
+--operation mode is normal
+
+A1L5 = !a[2] & (!a[0] & !a[1]);
+
+
+--A1L6 is Mux~103 at LC_X36_Y30_N6
+--operation mode is normal
+
+A1L6 = !a[2] & (a[0] & !a[1]);
+
+
+--A1L7 is Mux~104 at LC_X36_Y30_N2
+--operation mode is normal
+
+A1L7 = !a[2] & (!a[0] & a[1]);
+
+
+--A1L8 is Mux~105 at LC_X36_Y30_N3
+--operation mode is normal
+
+A1L8 = !a[2] & (a[0] & a[1]);
+
+
+--A1L9 is Mux~106 at LC_X36_Y30_N7
+--operation mode is normal
+
+A1L9 = a[2] & (!a[0] & !a[1]);
+
+
+--A1L01 is Mux~107 at LC_X36_Y30_N5
+--operation mode is normal
+
+A1L01 = a[2] & (a[0] & !a[1]);
+
+
+--A1L11 is Mux~108 at LC_X36_Y30_N9
+--operation mode is normal
+
+A1L11 = a[2] & (!a[0] & a[1]);
+
+
+--A1L21 is Mux~109 at LC_X36_Y30_N8
+--operation mode is normal
+
+A1L21 = a[2] & (a[0] & a[1]);
+
+
+--a[0] is a[0] at PIN_J8
+--operation mode is input
+
+a[0] = INPUT();
+
+
+--a[2] is a[2] at PIN_L7
+--operation mode is input
+
+a[2] = INPUT();
+
+
+--a[1] is a[1] at PIN_J9
+--operation mode is input
+
+a[1] = INPUT();
+
+
+--q[0] is q[0] at PIN_E9
+--operation mode is output
+
+q[0] = OUTPUT(A1L5);
+
+
+--q[1] is q[1] at PIN_H10
+--operation mode is output
+
+q[1] = OUTPUT(A1L6);
+
+
+--q[2] is q[2] at PIN_K8
+--operation mode is output
+
+q[2] = OUTPUT(A1L7);
+
+
+--q[3] is q[3] at PIN_C9
+--operation mode is output
+
+q[3] = OUTPUT(A1L8);
+
+
+--q[4] is q[4] at PIN_D9
+--operation mode is output
+
+q[4] = OUTPUT(A1L9);
+
+
+--q[5] is q[5] at PIN_F9
+--operation mode is output
+
+q[5] = OUTPUT(A1L01);
+
+
+--q[6] is q[6] at PIN_G8
+--operation mode is output
+
+q[6] = OUTPUT(A1L11);
+
+
+--q[7] is q[7] at PIN_B8
+--operation mode is output
+
+q[7] = OUTPUT(A1L21);
+
+
+
